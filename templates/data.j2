@@ -1,0 +1,7 @@
+Last Login: {{ system_time }} from {{ remote_ip }}<br \>
+Welcome to kushagra.net.in!
+{% for bash in script  %}
+<span class="user">{{ user }}</span>@<span class="host">{{ host }}</span> <span class="path">~</span>&gt; <span class="cmd">{{ bash.command }}</span> <span class="args">{{ bash.args }}</span><br />
+{{ bash.output }}<br />
+{% endfor %}
+<span class="user">{{ user }}</span>@<span class="host">{{ host }}</span> <span class="path">~</span>&gt;
